@@ -154,6 +154,7 @@ public class Game {
                 }
                 System.out.println("3) Look around this Area");
                 System.out.println("4) Interact with nearby object");
+                System.out.println("5) Map Legend");
                 System.out.print("What would you like to do? ");
                 Scanner input = new Scanner(System.in);
 
@@ -423,6 +424,28 @@ public class Game {
                                     }
                                 }
                             }
+
+
+                            break;
+                        case '5':
+                            DebugLogger.log("Showing Map Legend");
+
+                            System.out.println("\nMap Legend:");
+                            System.out.println("\t # = Wall");
+                            System.out.println("\t E = Entrance");
+                            System.out.println("\t X = Exit");
+                            System.out.println("\t D = Door");
+                            System.out.println("\t T = Table");
+                            System.out.println("\t C = Cabinet");
+                            System.out.println("\t L = Locker");
+                            System.out.println("\t d = Desk");
+                            System.out.println("\t B = Barrel");
+                            System.out.println("\t P = Player");
+
+                            // pause for a moment to let the player read the legend, continue on Enter key
+                            System.out.println("\nPress Enter to continue...");
+                            input = new Scanner(System.in);
+                            input.nextLine();
 
 
                             break;
