@@ -179,6 +179,11 @@ public class Game {
 
                             viewPlayerInventory(player);
 
+                            // pause for a moment to let the player read the inventory, continue on Enter key
+                            System.out.println("\nPress Enter to continue...");
+                            input = new Scanner(System.in);
+                            input.nextLine();
+
                             break;
                         case '3':
                         case 'l':
@@ -415,6 +420,11 @@ public class Game {
                                             } else {
                                                 System.out.println("You currently have no items in your inventory to use.");
                                             }
+
+                                            // pause for a moment to let the player read the message, continue on Enter key
+                                            System.out.println("\nPress Enter to continue...");
+                                            input = new Scanner(System.in);
+                                            input.nextLine();
 
                                             break;
                                         default:
